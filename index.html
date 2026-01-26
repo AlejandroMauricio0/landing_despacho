@@ -13,35 +13,72 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+        rel="stylesheet">
+
+
+
 </head>
 
 <body>
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg text-light  sticky-top" style="background-color: transparent;">
+    <nav id="navbar" class=" navbar bg-dar k navbar-expand-lg text-light fixed-top"
+        style="background-color: transparent;">
         <div class="container-fluid ps-5 pe-5">
             <!-- logo image -->
-            <img style="width: 100px" src="https://www.taprootz.in/images/profex/profexlogo.png" alt="" />
+            <img style="width: 150px"
+                src="https://www.profex.co.uk/wp-content/uploads/2018/05/Profex-logo-blue5-320h.png" alt="logo" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0  ">
-                    <li class="nav-item">
-                        <a class="nav-link  text-light active " aria-current="page" href="#">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light " href="#">Equipo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light " href="#">Contacto</a>
-                    </li>
+                <span class="navbar-toggler-icon">
 
-                </ul>
+                    <div class="rounded-circle border border-white">
+                        <label class="hamburger ">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 32 32">
+                                <path class="line line-top-bottom"
+                                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                                </path>
+                                <path class="line" d="M7 16 27 16"></path>
+                            </svg>
+                        </label>
+                    </div>
+                </span>
+            </button>
+            <!-- list content -->
+            <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarSupportedContent">
+                <div class="mb-2 mb-lg-0  col-sm-6 d-flex justify-content-between">
+                    <div class="nav-item p-2 flex-fill">
+                        <a class="nav-link" href="">
+                            Sobre Nosotros
+                        </a>
+                    </div>
+                    <div class="nav-item p-2 flex-fill">
+                        <a class="nav-link" href="">
+                            Equipo
+                        </a>
+                    </div>
+                    <div class="nav-item p-2 flex-fill">
+                        <a class="nav-link" href="">
+                            Contacto
+                        </a>
+                    </div>
+                    <div class="nav-item p-2 flex-fill">
+                        <a class="nav-link text-decoration-underline" href="">
+                            Escribenos
+                        </a>
+                    </div>
+
+
+                </div>
                 <!-- menu hamburguesa -->
                 <div class="rounded-circle border border-white">
-                    <label class="hamburger ">
+                    <label class="hamburger">
                         <input type="checkbox">
                         <svg viewBox="0 0 32 32">
                             <path class="line line-top-bottom"
@@ -55,11 +92,620 @@
         </div>
     </nav>
 
-    <img class="w-100" src="https://i.pinimg.com/1200x/f7/4e/32/f74e32f6146f0585eaacf59e00f7d74e.jpg" alt="">
+    <div class="position-relative">
+        <!-- <img class="w-100" src="./images/library.jpg" alt=""> -->
+        <img class="w-100 bg-image-star"
+            src="https://preview.redd.it/8wwbkj8xcj621.jpg?width=640&crop=smart&auto=webp&s=50acdb12b073aa7cc707246d605eeb72f998c7f3"
+            alt="backgroun_profex">
+        <div class="text-light position-absolute top-50 start-0 translate-middle-y" style="margin-top: -520px;">
+            <h1 class="col-sm-4  google-sans-flex-400 ms-5"
+                style="font-size:6rem; font-family: Arial, Helvetica, sans-serif; line-height: 80px; ">Despacho
+                con un toque especial.</h1>
+        </div>
+
+        <div class="position-absolute top-50 start-50 translate-middle-y border-top"
+            style="margin-top: -920px; margin-left: 35px; width: 675px;">
+            <p class="text-light col-sm-6 pt-5" style="line-height: 30px; font-size: 29px; ">
+                Profex somos una firma de contadores y abogados con más de diez años de experiencia
+            </p>
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle-y"
+            style="margin-top: -670px;margin-left: 35px; width: 700px; ">
+            <p class="text-light col-sm-6 pt-5" style="line-height: 30px; font-size: 20px;">
+                (Desliza para explorar)
+            </p>
+        </div>
+
+        <div class="position-absolute top-50 start-50 translate-middle container-fluid p-5">
+
+            <div class="border-top border-light border-2 text-light">
+                <div class="d-flex justify-content-between">
+                    <p class="pt-4 text-uppercase fw-medium">Nuestros Servicios</p>
+                    <p class="pt-4 text-uppercase fw-medium">1.3</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p class="text-uppercase fw-medium pt-3 border-bottom border-2 border-light"
+                            style="height: 76%;">
+
+                        </p>
+                        <div class="mt-5">
+                            <h1>Visión</h1>
+                            <p class="col-sm-6">
+                                Ser una firma en servicios contables.
+                                Fiscales, corporativos y legales en el sureste.
+                                Apoyada con tegnoliga y conocimiento para contribuir
+                                al desarrollador social.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 d-flex justify-content-end ">
+
+                        <div class="col-sm-8 ">
+                            <div class="border-bottom border-2">
+                                <p class="pt-3 col-sm-9 google-sans-flex-400 mt-5"
+                                    style="font-size: 30px; line-height: 35px;">
+                                    Profex somos una firma de contadores y abogados que brinda servicios contables
+                                    fiscales
+                                    y
+                                    legales con ética, profesionalismo y compromiso social.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                            <div style="margin-top: 150px;">
+                                <h1>Mision</h1>
+                                <p class="col-sm-6">
+                                    Profex ofrece servicios contables, fiscales, corporativos y legales para pymes, con
+                                    personal certificado y el apoyo de la tegnologia, garantizando calidad y
+                                    responsabilidad
+                                    social.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="container-fluid p-5" style="margin-top: 50px;">
+        <div class=" border-top border-3 border-black mb-5">
+            <div class="d-flex justify-content-between">
+                <p class="pt-4 text-uppercase fw-medium">Nuestros Servicios</p>
+                <p class="pt-4 text-uppercase fw-medium">1.2</p>
+            </div>
+            <h1 class="mt-5" style="font-size: 5rem;">Brindamos servicios legales en las áreas más complejas del
+                derecho.</h1>
+        </div>
+
+
+        <div class="row mt-5">
+            <!-- Columna izquierda -->
+            <div class="col-sm-4">
+                <div class="border-top border-black fw-medium m-1">
+                    Especializados en:
+                </div>
+
+            </div>
+
+            <!-- Cuadro derecho -->
+            <div class="col-sm-8">
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-between  border-top border-black  m-1">
+                            <div class="fw-medium pb-5 fs-4 text-capitalize">Contabilidad</div>
+                            <div>01</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-between  border-top border-black m-1">
+                            <div class="fw-medium pb-5 fs-4 text-capitalize">Impuestos</div>
+                            <div>02</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <div class="d-flex justify-content-between  border-top border-black m-1">
+                            <div class="fw-medium pb-5 fs-4 text-capitalize">Fiscales</div>
+                            <div>03</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-between  border-top border-black m-1">
+                            <div class="fw-medium pb-5 fs-4 text-capitalize">Corporativos</div>
+                            <div>04</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-between  border-top border-black m-1">
+                            <div class="fw-medium pb-5 fs-4 text-capitalize">Legales</div>
+                            <div>05</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-between  border-top border-black m-1">
+                            <div class="fw-medium pb-5 fs-4 text-capitalize">Auditorias</div>
+                            <div>06</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid ps-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-2 rounded-top" style="max-width: 30rem; background:#F2F2F2;">
+                    <div class="card-body p-4">
+                        <div>
+                            <p class="fs-6 text-uppercase fw-medium">Sobre nosotros</p>
+                        </div>
+                        <p class="card-text col-sm-8">Brindar servicios contables, fiscales, corporativos y legales con
+                            integridad,
+                            responsabilidad y calidad, apoyando a los clientes en sus transiciones.</p>
+                    </div>
+                    <div class="d-flex justify-content-end pe-4 pb-3">
+                        <div class="rounded-circle" style="width: 40px;">
+
+                            <label class="container-button">
+                                <input type="checkbox" checked="checked">
+                                <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                                    </path>
+                                </svg>
+                                <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <img class="rounded" style="background-position: center; background-size: cover ; height: 620px;"
+                    src="https://cdn.euroinnova.edu.es/img/subidasEditor/concepto-de-humanismo_1727186703.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div style="margin-bottom: 150px ; margin-top: 200px;">
+        <div class="position-relative">
+            <img style="  width: 100%; height: 800px;"
+                src="https://www.avocatpavel.com/wp-content/uploads/2023/03/zach-plank-o-cpCRdEgxs-unsplash-scaled.jpg"
+                alt="book">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <h1 class="text-light"></h1>
+                <img src="https://www.profex.co.uk/wp-content/uploads/2018/05/Profex-logo-blue5-320h.png" width="500px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Nuestros servicios -->
+    <div class="container-fluid p-5" style="background-color: #E4E4E4;">
+        <div class="mb-2 border-top border-3 border-black">
+            <div class="d-flex justify-content-between">
+                <p class="pt-4 text-uppercase fw-medium">Nuestros Servicios</p>
+                <p class="pt-4 text-uppercase fw-medium">1.3</p>
+            </div>
+
+            <div class="mb-5">
+                <h1 class="col-sm-11 mt-5" style="font-size: 4rem; font-family: sans-serif; line-height: 70px;">Nuestros
+                    equipo esta conformado por abogados y contadores que tranforman los negocios en viajes
+                    cautivadores.</h1>
+            </div>
+            <br>
+            <div class="mt-5 border-top border-3 border-black">
+                <div class="mt-5 d-flex justify-content-between">
+                    <p>• Consejo de Adminitradores</p>
+                    <p class="col-7">El consejo de adminitración gestiona los asuntos de la empresa con una clara vision
+                        estrategica
+                        utilizando sus conocimientos, habilidades y experiencia en gobierno corporativos</p>
+                </div>
+                <div class="mt-5 d-flex justify-content-end">
+                    <div class="col-sm-8">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <img src="./images/conta_1.jpeg" class="rounded card-img-top " alt="..." width="90%"
+                                    height="550px">
+                                <div class="mt-4">
+                                    <p>José Carlos</p>
+                                    <p class="fs-6 text-secondary">Co-founder & Ceo of profex Servicios integrales del
+                                        sureste</p>
+                                </div>
+                                <p class="border-top pt-4 border-black border-1 ">Bibliografia →</p>
+
+                            </div>
+                            <div class="col">
+                                <div class="" style="width: 18rem;">
+                                    <img src="./images/conta_2jpeg.jpeg" class="rounded card-img-top" alt="..."
+                                        width="90%" height="550PX">
+                                    <div class="mt-4">
+                                        <p>José Carlos</p>
+                                        <p class="fs-6 text-secondary">Co-founder & Ceo of profex Servicios integrales
+                                            del
+                                            sureste</p>
+                                    </div>
+                                    <p class="border-top pt-4 border-black border-1 ">Bibliografia →</p>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="">
+                                    <img src="./images/conta_3.jpeg" class="rounded card-img-top" alt="..." width="90%"
+                                        height="550px">
+                                    <div class="mt-4">
+                                        <p>José Carlos</p>
+                                        <p class="fs-6 text-secondary">Co-founder & Ceo of profex Servicios integrales
+                                            del
+                                            sureste</p>
+                                    </div>
+                                    <p class="border-top pt-4 border-black border-1 ">Bibliografia →</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5" style="background-color: #E4E4E4;">
+        <div class="border-top border-black border-3">
+            <div class="d-flex justify-content-between">
+                <p class="pt-4 text-uppercase fw-medium">Nuestros Principios</p>
+                <p class="pt-4 text-uppercase fw-medium">1.4</p>
+            </div>
+        </div>
+        <div class="mb-5">
+            <h1 class="col-sm-12 mt-5" style="font-size: 4rem; font-family: sans-serif; line-height: 70px;">Nuestros
+                En profex trabajamos con valores que garantizan, confianza, calidad y compromiso con nuestros clientes y
+                la comunidad.</h1>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample" style="background-color: none;">
+            <div class="accordion-item border border-0 ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex justify-content-between p-4 rounded " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne" style="background-color: #F2F2F2;">
+                        <div class="fw-medium fs-5">01</div>
+                        <div class="col-sm-3 fw-medium fs-5">Integridad</div>
+                        <div style="width: 30px;">
+                            <!-- icon circle plus -->
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M9 12H15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M12 9L12 15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="#323232" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+                </div>
+            </div>
+            <div class="accordion-item border border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex justify-content-between p-4 rounded"
+                        style="background-color: #fefefe;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <div class="fw-medium fs-5">02</div>
+                        <div class="col-sm-3 fw-medium fs-5">Objetividad</div>
+                        <div style="width: 30px;">
+                            <!-- icon circle plus -->
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M9 12H15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M12 9L12 15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="#323232" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine
+                        this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item border border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex justify-content-between p-4 rounded"
+                        style="background-color: #F2F2F2;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <div class="fw-medium fs-5">03</div>
+                        <div class="col-sm-3 fw-medium fs-5">Competencia profecional</div>
+                        <div style="width: 30px;">
+                            <!-- icon circle plus -->
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M9 12H15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M12 9L12 15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="#323232" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at
+                        least at first glance, a bit more representative of how this would look in a real-world
+                        application.</div>
+                </div>
+            </div>
+            <div class="accordion-item border border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex justify-content-between p-4 rounded"
+                        style="background-color: #fefefe;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <div class="fw-medium fs-5">04</div>
+                        <div class="col-sm-3 fw-medium fs-5">Comportamiento profecional</div>
+                        <div style="width: 30px;">
+                            <!-- icon circle plus -->
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M9 12H15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M12 9L12 15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="#323232" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine
+                        this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item border border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex justify-content-between p-4 rounded"
+                        style="background-color: #F2F2F2;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        <div class="fw-medium fs-5">05</div>
+                        <div class="col-sm-3 fw-medium fs-5">Confidencialidad</div>
+                        <div style="width: 30px;">
+                            <!-- icon circle plus -->
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M9 12H15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M12 9L12 15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="#323232" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine
+                        this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item border border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex justify-content-between p-4 rounded"
+                        style="background-color: #fefefe;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        <div class="fw-medium fs-5">06</div>
+                        <div class="col-sm-3 fw-medium fs-5">Honestidad</div>
+                        <div style="width: 30px;">
+                            <!-- icon circle plus -->
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M9 12H15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M12 9L12 15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="#323232" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine
+                        this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item border border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex justify-content-between p-4 rounded"
+                        style="background-color: #f2f2f2;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        <div class="fw-medium fs-5">07</div>
+                        <div class="col-sm-3 fw-medium fs-5">Responsabilidad</div>
+                        <div style="width: 30px;">
+                            <!-- icon circle plus -->
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M9 12H15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M12 9L12 15" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="#323232" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine
+                        this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="background-color: #040404;">
+        <div class="container-fluid p-5">
+            <p class="text-light fs-1 col-4" style="line-height: 40px;">
+                ¿Tienes alguna duda?
+                Contactanos aquí
+            </p>
+            <div class="row ">
+                <div class="col-sm-4 ">
+                    <h5 class="text-light">Escribe tu mensaje</h5>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <input type="text" id="nombre" placeholder=" " required>
+                                    <label for="nombre">Nombre</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <input type="email" id="correo" placeholder=" " required>
+                                    <label for="correo">Correo electrónico</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <textarea id="mensaje" rows="3" placeholder=" " required></textarea>
+                            <label for="mensaje">Tu mensaje</label>
+                        </div>
+
+                        <button type="submit" class="btn-send">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+
+                <div class="container col-sm-8  d-flex justify-content-center">
+                    <div class="col-sm-4">
+                        <h5 class="text-light">Ponte en contacto</h5>
+
+                        <p class="text-light fs-6">
+                            Calle Primavera #139. Fraccionamiento
+                            La Alborada Tuxtla Gutiérrez, Chiapas.
+                            C.P. 2902
+                        </p>
+
+                        <p class="text-light">hi@profrix.com</p>
+                        <p class="text-light">+52 961 888 8888</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5 class="text-light">Nuestra Redes</h5>
+
+
+                        <ul style="list-style: none; padding: 0; margin: 0;  gap: 16px;">
+                            <li>
+                                <a class="text-decoration-underline" href="#"
+                                    style="color: white; text-decoration: none;">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-underline" href="#"
+                                    style="color: white; text-decoration: none;">WhatsApp</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-underline" href="#"
+                                    style="color: white; text-decoration: none;">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-underline" href="#"
+                                    style="color: white; text-decoration: none;">X</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-underline" href="#"
+                                    style="color: white; text-decoration: none;">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 <!-- script bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+<!-- script navbar -->
+
+<script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 50) {
+            document.getElementById("navbar").style.backgroundColor = "rgba(10, 16, 30)";
+        } else {
+            document.getElementById("navbar").style.backgroundColor = "transparent";
+        }
+    }
+</script>
 
 </html>

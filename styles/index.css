@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .hamburger {
     cursor: pointer;
 }
@@ -35,4 +40,174 @@
 .hamburger input:checked+svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
+}
+
+/* bg-start */
+.bg-image-star {
+    height: 310vh;
+    /* width: 100vh; */
+    background-repeat: no-repeat;
+    /* background-size:contain; */
+    background-position: center;
+    /* background-image: url('../images/lib rary.jpg'); */
+    /* box-shadow: inset -233435px 3px 1005px -1000px rgba(24, 16, 16, 0.541); */
+    box-shadow: inset 233435px 3px 1005px -1000px rgba(0, 0, 0, 0.94);
+
+}
+
+/* font family */
+
+.google-sans-flex-400 {
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "GRAD" 0,
+        "ROND" 0;
+}
+
+/* animation read more */
+.container-button {
+    --color: #000000;
+    --size: 20px;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    background: #8C8C8C;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+
+    /* fill: var(--color); */
+}
+
+.container-button .chevron-right {
+    /* position: absolute; */
+    animation: keyframes-return .5s;
+}
+
+.container-button .chevron-down {
+    /* position: absolute; */
+    display: none;
+    animation: keyframes-fill .5s;
+}
+
+/* ------ On check event ------ */
+.container-button input:checked~.chevron-right {
+    display: none;
+}
+
+.container-button input:checked~.chevron-down {
+    display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.container-button input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+    0% {
+        transform: rotate(-90deg) scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1.2);
+    }
+}
+
+@keyframes keyframes-return {
+    0% {
+        transform: rotate(90deg) scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1.2);
+    }
+}
+
+/* cambiar icono accordeon*/
+.accordion-button::after {
+    display: none;
+}
+
+/* input form */
+.form-wrapper {
+    max-width: 600px;
+    margin: 80px auto;
+}
+
+.field {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    padding: 8px 0;
+    outline: none;
+    font-size: 1rem;
+}
+
+.field textarea {
+    resize: none;
+}
+
+.field label {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* Placeholder flotante */
+.field input:focus+label,
+.field input:not(:placeholder-shown)+label,
+.field textarea:focus+label,
+.field textarea:not(:placeholder-shown)+label {
+    top: -14px;
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+/* Línea activa */
+.field input:focus,
+.field textarea:focus {
+    border-bottom-color: #0d6efd;
+}
+
+/* Botón */
+.btn-send {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding: 0;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-send:hover {
+    text-decoration: underline;
 }
