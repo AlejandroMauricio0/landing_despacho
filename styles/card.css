@@ -6,13 +6,18 @@
 }
 
 .card {
-    background: white;
+    /* background: rgb(255, 0, 0); */
     /* padding: 60px 40px; */
     border-radius: 20px;
     text-align: center;
     width: 320px;
     transition: 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); */
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(10px);
 }
 
 .card:hover {
@@ -30,7 +35,7 @@
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    color: #111;
+    color: #d1af5f;
     box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.05),
         inset -5px -5px 15px rgba(255, 255, 255, 0.7);
 }
@@ -67,8 +72,14 @@
     color: white;
 }
 
+.tex-title {
+    font-size: 5.9rem;
+
+}
+
 .tex_movil {
     font-size: 4rem;
+
 }
 
 @media (max-width: 576px) {

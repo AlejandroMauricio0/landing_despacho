@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML + CSS</title>
+
+    <!-- import bootstrap nativo -->
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <!-- js -->
     <!-- <link rel="import" href="index.js"> -->
@@ -52,7 +55,7 @@
     <!-- branding -->
     <div id="branding_load"></div>
 
-    <div class="container- fluid p-3" style="background-color: #E4E4E4;" id="equipo">
+    <div class="container- fluid p-5" style="background-color: #E4E4E4;" id="equipo">
         <!-- team -->
         <div id="team_load"></div>
         <!-- rules -->
@@ -72,25 +75,36 @@
 
 <!-- script navbar -->
 
+
+<script type="module" src="./js/rules.js"></script>
 <script>
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
         if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 50) {
 
-            document.getElementById("navbar").style.backgroundColor = "rgba(10, 16, 30)";
+            // document.querySelector.("navbar").style.backgroundColor = "black";
+
+            document.querySelectorAll('#navbar').forEach(link => {
+                link.style.backdropFilter = "blur(10px)";
+                link.style.backgroundColor = "rgba(0,0,0,0.5)";
+            })
+            document.getElementById("logo").src = "./images/profex2.png";
 
             document.querySelectorAll('.nav-link').forEach(link => {
-                link.style.color = "black";
+                link.style.color = "white";
             });
 
-            document.querySelectorAll('.line').forEach(line => {
-                line.style.stroke = "black";
-            });
+
+
 
         } else {
 
-            document.getElementById("navbar").style.backgroundColor = "transparent";
+            document.querySelectorAll('#navbar').forEach(link => {
+                link.style.backdropFilter = "blur(0px)";
+                link.style.backgroundColor = "transparent";
+            })
+            document.getElementById("logo").src = "./images/profex.png";
 
             document.querySelectorAll('.line').forEach(line => {
                 line.style.stroke = "black";
@@ -103,7 +117,6 @@
 
     }
 </script>
-<script type="module" src="./js/rules.js"></script>
 
 <script type="module">
 
@@ -122,13 +135,13 @@
             });
     }
 
-    loadSection("navbar_load", "navbar");
     loadSection("start_load", "start");
     loadSection("about_us_load", "about_us");
     loadSection("services_load", "services");
     loadSection("branding_load", "branding");
     loadSection("team_load", "team");
 
+    loadSection("navbar_load", "navbar");
     loadSection("rules_load", "rules", () => {
         initRules();
     });
